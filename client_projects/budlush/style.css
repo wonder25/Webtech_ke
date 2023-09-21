@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root {
+    --bgcolor: #fff;
+    --second-bg-color: #9F2B68;
+    --text-color: #000;
+    --main-color: #FFB6B4;
+}
+
+html {
+     font-size: 62.5%;
+     overflow-x: hidden;
+}
+
+body {
+    background: var(--bgcolor);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--bgcolor);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--bgcolor);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--text-color);
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: var(--text-color);
+}
+
+.nav-icons a {
+    font-size: 2.2rem;
+    color: var(--bgcolor);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+    float: right;
+}
+
+.nav-icons a:hover {
+    color: var(--text-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--second-bg-color);
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 2rem 9%;
+    margin: 20px;
+
+}
+
+.image-section {
+    min-height: 100vh;
+    background: url(pics/215569-P0U1O0-314.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+
+}
+
+.home-content {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-title h1 {
+    font-size: 6.0rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FFB6B4;
+}
+.home-about h3 {
+    font-size: 3.0rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.home-about a {
+    top: 20px;
+    padding: 20px;
+    margin: 5px;
+    font-size: 3.0rem;
+    font-weight: 300;
+    color: #9F2B68;
+    position: relative;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.about-image {
+    width: auto;
+    height: auto;
+    background-image: url(pics/10.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.about-content {
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #FFB6B4;
+
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.gallery-tag h1 {
+    text-align: center;
+    font-size: 6rem;
+    color: #FFB6B4;
+    font-weight: 500;
+
+}
+
+.gallery-tag blockquote{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #000;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: calc(50% - 10px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+    transition: transform 0,3s ease-in-out;
+}
+
+.footer {
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--text-color);
+}
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 30px;
+}
+
+.contacts a {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: #9F2B68;
+    text-align: center;
+
+}
+
+.footer-copy {
+    background: var(--text-color);
+}
+.contact h3 {
+    text-align: center;
+    color: var(--second-bg-color);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+/* Lightbox styles*/
