@@ -27,6 +27,7 @@ html {
 body {
     background: var(--bgcolor);
     color: var(--text-color);
+    width: 100%;
 }
 
 /* header styling*/
@@ -89,8 +90,8 @@ body {
 /* top section styling */
 section {
     min-height: 100vh;
-    padding: 2rem 9%;
-    margin: 20px;
+    padding: 1rem 5%;
+    margin: 10px;
 
 }
 
@@ -102,12 +103,11 @@ section {
     background-repeat: no-repeat;
 }
 /* home section styling */
+
 .home {
-    display: flex;
-    align-items: center;
-
+    margin-top: 5rem;
+    min-height: 75vh;
 }
-
 .home-content {
     display: grid;
     grid-column-gap: 20px;
@@ -234,6 +234,8 @@ section {
     text-align: center;
 
 }
+
+/* copyright */
 
 .footer-copy {
     background: var(--text-color);
